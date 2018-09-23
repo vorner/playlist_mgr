@@ -140,9 +140,10 @@ impl Player {
 
             let info = Tag::read_from_path(&song)
                 .map(|tag| {
-                    let album = tag.album_artist().unwrap_or("???");
+                    let album = tag.album().unwrap_or("???");
+                    let artist = tag.artist().unwrap_or("???");
                     let title = tag.title().unwrap_or("???");
-                    format!("{} ({})", title, album)
+                    format!("{} ({}/{})", title, artist, album)
                 }).unwrap_or_else(|_| "???".to_owned());
 
             println!("• {}\n  {}", info, song.to_string_lossy());
