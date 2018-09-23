@@ -3,6 +3,9 @@ name = "playlist_mgr"
 version = "0.1.0"
 authors = ["Michal 'vorner' Vaner <vorner@vorner.cz>"]
 edition = "2018"
+license = "GPL3+"
+publish = false
+readme = "README.md"
 
 [dependencies]
 corona = "~0.4"
