@@ -1,0 +1,18 @@
+[package]
+name = "playlist_mgr"
+version = "0.1.0"
+authors = ["Michal 'vorner' Vaner <vorner@vorner.cz>"]
+edition = "2018"
+
+[dependencies]
+corona = "~0.4"
+env_logger = "~0.5"
+failure = "~0.1"
+futures = "~0.1"
+id3 = "~0.2"
+log = "~0.4"
+nix = "~0.11"
+once_cell = "~0.1"
+rand = "~0.5"
+tokio = "~0.1"
+tokio-process = "~0.2"
