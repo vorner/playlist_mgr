@@ -19,3 +19,7 @@ once_cell = "~0.1"
 rand = "~0.5"
 tokio = "~0.1"
 tokio-process = "~0.2"
+
+[profile.release]
+lto = true
+opt-level = "s"
