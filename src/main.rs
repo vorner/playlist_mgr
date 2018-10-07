@@ -1,3 +1,5 @@
+#![forbid(unsafe_code)]
+
 use std::collections::HashSet;
 use std::io::{self, BufRead, BufReader};
 use std::ffi::{OsStr, OsString};
