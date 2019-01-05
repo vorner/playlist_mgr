@@ -189,7 +189,7 @@ impl Player {
     }
 
     fn pause(&mut self) {
-        self.send_mpv(b"pause\n");
+        self.send_mpv(b"keypress p\n");
     }
 
     fn play_pause(&mut self) {
