@@ -261,6 +261,12 @@ impl Player {
                     self.songs = songs;
                     self.position = 0;
                 }
+                println!(
+                    ">>> Playlist: {} songs, History: {}, Position: {}",
+                    self.songs.len(),
+                    self.history.len(),
+                    self.position,
+                );
             }
             Mode(mode) => self.mode = mode,
             Confirm(sender) => {
