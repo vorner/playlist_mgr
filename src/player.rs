@@ -123,7 +123,7 @@ impl Player {
                 let receiver_fd = receiver.as_raw_fd();
 
                 let child = Command::new("/usr/bin/mpv")
-                    .args(&["-really-quiet", "-vo", "null", "--input-file=fd://4"])
+                    .args(&["-really-quiet", "-vo", "null", "--input-ipc-client=fd://4"])
                     .arg(&song)
                     .stdin(Stdio::null())
                     .stdout(Stdio::null())
